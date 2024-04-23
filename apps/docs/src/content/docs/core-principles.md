@@ -11,7 +11,7 @@ Allmaps uses open data to make open data. Following [FAIR data principles](https
 
 In Allmaps, the *input data* is always **structured metadata about a map**. Allmaps works by parsing [IIIF manifests](https://iiif.io/api/content-state/1.0/) and displaying their contents in a viewer. In this viewer, users can create and view georeferenced maps.
 
-The *output data* are **georeference annotations**, or JSON files that store information about how a map should be georeferenced according to the [IIIF Georeference Extension](https://iiif.io/api/extension/georef/). At minimum, a georeference annotation contains two main components:
+The *output data* are **georeference annotations**, or JSON files that store information about how a map should be transformed and displayed according to the [IIIF Georeference Extension](https://iiif.io/api/extension/georef/). At minimum, a georeference annotation contains two main components:
 
 1. A **mask**, or a simple polygon that specifies which parts of a georeferenced map should be displayed (anything outside the mask will **not** be displayed)
 2. A set of **ground control points** which associate pixel coordinates of a point in the input image with the geographic coordinates where they belong in the real world
